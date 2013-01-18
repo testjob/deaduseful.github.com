@@ -1,8 +1,11 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>deaduseful - tools, code, blog - nailed it.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We develop web tools, release code and blog about it.">
@@ -26,7 +29,7 @@
         background: #eee url(img/deaduseful-background.png) no-repeat 95% -5%;
       }
       .tools img {
-        width: 300px;
+        width: 260px;
         height: 200px;
         background: #eee;
       }
@@ -43,11 +46,6 @@
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
@@ -57,7 +55,9 @@
   </head>
 
   <body>
-
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -115,37 +115,48 @@
             <ul class="thumbnails">
               <li class="span3">
                 <div class="thumbnail">
-                  <img src="img/deaduseful-background.png" alt="">
+                  <img src="img/tools_pr.png" alt="PageRank Tool Thumbnail">
                   <div class="caption">
-                    <h3>Coming soon</h3>
-                    <p>Watch this space! A new tool will be here soon...</p>
-                    <p><a href="#" class="btn btn-primary">Visit</a></p>
+                    <h3>PageRank Viewer</h3>
+                    <p>A really simple way to check your Google PageRank.</p>
+                    <p><a href="http://pr.deaduseful.com/" class="btn btn-primary">Visit</a></p>
                   </div>
                 </div>
               </li>
               <li class="span3">
                 <div class="thumbnail">
-                  <img src="img/deaduseful-background.png" alt="">
+                  <img src="img/tools_ip.png" alt="Pretty 'What Is My IP Address?'' Lookup Tool Thumbnail">
                   <div class="caption">
-                    <h3>Coming soon</h3>
-                    <p>Watch this space! A new tool will be here soon...</p>
-                    <p><a href="#" class="btn btn-primary">Visit</a></p>
+                    <h3>Pretty IP</h3>
+                    <p>A pretty "What Is My IP Address?" Lookup Tool.</p>
+                    <p><a href="http://ip.deaduseful.com/" class="btn btn-primary">Visit</a></p>
                   </div>
                 </div>
               </li>
               <li class="span3">
                 <div class="thumbnail">
-                  <img src="img/deaduseful-background.png" alt="">
+                  <img src="img/tools_up.png" alt="Up Thumbnail">
                   <div class="caption">
-                    <h3>Coming soon</h3>
-                    <p>Watch this space! A new tool will be here soon...</p>
-                    <p><a href="#" class="btn btn-primary">Visit</a></p>
+                    <h3>Is it up?</h3>
+                    <p>Use this to check if your website is up or down.</p>
+                    <p><a href="http://up.deaduseful.com/" class="btn btn-primary">Visit</a></p>
                   </div>
                 </div>
               </li>
               <li class="span3">
                 <div class="thumbnail">
-                  <img src="img/deaduseful-background.png" alt="">
+                  <img src="img/tools_hash.png" alt="Hash Thumbnail">
+                  <div class="caption">
+                    <h3>Hash</h3>
+                    <p>MD5 conversion and MD5 reverse lookup.</p>
+                    <p><a href="http://hash.deaduseful.com/" class="btn btn-primary">Visit</a></p>
+                  </div>
+                </div>
+              </li>
+              <!--
+              <li class="span3">
+                <div class="thumbnail">
+                  <img src="img/deaduseful-background.png" alt="Thumbnail">
                   <div class="caption">
                     <h3>Coming soon</h3>
                     <p>Watch this space! A new tool will be here soon...</p>
@@ -153,6 +164,7 @@
                   </div>
                 </div>
               </li>
+              -->
             </ul>
           </div>
 
@@ -169,19 +181,13 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        var _gaq=[['_setAccount','UA-37776183-1'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
 
   </body>
 </html>
