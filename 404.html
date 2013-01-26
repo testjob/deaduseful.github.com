@@ -152,6 +152,17 @@
                 var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
             </script>
             <script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
+            <script type="text/javascript">
+                var cx = "013994439597745843261:ra7zc6ufsvg";
+                var theForm = document.forms[0];
+                var input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'cx';
+                input.value = cx;
+                theForm.appendChild(input);
+                theForm.onsubmit = null;
+                theForm.action = 'http://www.google.com/';
+            </script>
         </div>
     </body>
 </html>
